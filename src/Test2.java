@@ -5,9 +5,9 @@ public class Test2 {
         b = j;
     }
     // pass an object
-    void meth(Test o) {
-        o.a *= 2;
-        o.b /= 2;
+    void meth(Test2 o1) {
+        o1.a *= 2;
+        o1.b /= 2;
     }
     // pass an int
         void meth (int a, int b){
@@ -16,15 +16,15 @@ public class Test2 {
     }
 }
     class PassObjRef{
-        public void main(String[] args) {
-            Test2 ob = new Test2(15, 20);
+        public static void main(String[] args) {
+            Test2 obj = new Test2(15, 20);
 
             int x=10; int y=10;
-            ob.meth(x,y);
-            System.out.println("x and y before call" + x + " " + y);
-            System.out.println("ob.a and ob.b before call" + ob.a + " " + ob.b);
-            ob.meth(ob);
-            System.out.println("ob.a and ob.b after call" + ob.a + " " + ob.b);
+            obj.meth(x,y);
+            System.out.println("x and y before call  " + x + " " + y);
+            System.out.println("ob.a and ob.b before call  " + obj.a + " " + obj.b);
+            obj.meth(obj);
+            System.out.println("ob.a and ob.b after call  " + obj.a + " " + obj.b);
 
         }
     }
