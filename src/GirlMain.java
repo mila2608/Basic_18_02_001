@@ -1,4 +1,4 @@
-public class Main {
+public class GirlMain {
     public static void main(String[] args) {
         FirstClass firstClass = new FirstClass();
         System.out.println(firstClass.age);

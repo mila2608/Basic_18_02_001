@@ -34,7 +34,11 @@ int[] a2 = {0,0,0,0,0,0,0,0,0,0,0,0,0};
                     n[j + 1] = temp;
                 }
             }
+            System.out.println();
         }
+        System.out.println("hdjkfhgjh");
+        System.out.println("erywtr647236" +
+                "hghghj");
     }
 
     private static void revert(int[] a1) {
