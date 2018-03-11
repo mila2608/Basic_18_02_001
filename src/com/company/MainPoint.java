@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.stream.Stream;
+
 public class MainPoint {
     public static void main(String[] args) throws CloneNotSupportedException {
         Point point = new Point(10, 10);
@@ -11,6 +13,7 @@ public class MainPoint {
         System.out.println(point1.hashCode());
         System.out.println(point1.equals(point2));
         System.out.println(point.getClass() == Point.class);
+        Stream.of("1", "2","3", "4").mapToInt(Integer::parseInt).filter(s->s%2==0).forEach(s-> System.out.println());
 
     }
 }
