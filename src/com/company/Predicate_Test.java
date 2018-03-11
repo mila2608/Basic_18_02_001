@@ -7,6 +7,7 @@ import java.util.stream.Stream;
 
 public class Predicate_Test {
     public static void main(String[] args) {
+        // Predicate
         // arg - lokal variable in method
         Predicate<String>nullCheck = arg->arg != null;
         Predicate<String>emptyCheck = arg ->arg.length()>0;
@@ -25,6 +26,7 @@ public class Predicate_Test {
         Stream.generate(r::nextInt)
                 .limit(2)
                 .forEach(System.out::println);
+        // Consumer - ForEach
 
     }
 }
