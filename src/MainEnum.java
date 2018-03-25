@@ -1,7 +1,7 @@
 public class MainEnum {
     public static void main(String[] args) {
         //  Apple a = Apple.A;
-        Apple ap;
+      /*  Apple ap;
         ap = Apple.A;
         if (ap == Apple.A)
             System.out.println("ap contains A.\n");
@@ -48,5 +48,6 @@ Integer kOb = 128;
         } else
             System.out.println("== noequal");
 
+    }*/
     }
 }
