@@ -7,6 +7,7 @@ public class Collection3 {
     public static void main(String[] args) {
         Comparator<Girl1> nameComparator = (a1, a2) -> a1.name.compareTo(a2.name);
         TreeSet<Girl1> girl1s = new TreeSet<>(new GirlComparatorMain());
+        TreeSet<Girl1> girl1s2 = new TreeSet<Girl1>((a1, a2) -> a1.name.compareTo(a2.name));
         girl1s.add(new Girl1("Ira", 33));
         girl1s.add(new Girl1("Anna", 23));
         girl1s.add(new Girl1("Ket", 15));
